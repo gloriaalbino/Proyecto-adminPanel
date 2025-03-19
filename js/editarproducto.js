@@ -1,4 +1,4 @@
-import { obtenerproducto, editarproducto } from "./api.js";
+import { obtenerProducto, editarProducto } from "./api.js";
 import { mostrarAlerta } from "./mostrarAlerta.js";
 
 (function () {
@@ -11,7 +11,7 @@ import { mostrarAlerta } from "./mostrarAlerta.js";
     document.addEventListener('DOMContentLoaded', async () => {
         const parametrosURL = new URLSearchParams(window.location.search);
         const idProducto = parseInt(parametrosURL.get('id'));
-        const producto = await obtenerproducto(idProducto);
+        const producto = await obtenerProducto(idProducto);
         mostrarProducto(producto);
 
         // Registro de la actualización del producto
@@ -40,7 +40,7 @@ import { mostrarAlerta } from "./mostrarAlerta.js";
             mostrarAlerta('Todos los campos son obligatorios');
             return;
         } else {
-            await editarproducto(producto);
+            await editarProducto(producto);
             window.location.href = 'index.html';
         }
     }

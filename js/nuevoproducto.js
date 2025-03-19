@@ -1,4 +1,4 @@
-import { nuevoproducto } from "./api.js";
+import { nuevoProducto } from "./api.js";
 import { mostrarAlerta } from "./mostrarAlerta.js";
 
 const formulario = document.querySelector('#formulario');
@@ -21,7 +21,7 @@ async function validarProducto(e) {
         mostrarAlerta('Todos los campos son obligatorios');
         return;
     }else{
-        await nuevoproducto(producto);
+        await nuevoProducto(producto);
         window.location.href = 'index.html';
     }
 

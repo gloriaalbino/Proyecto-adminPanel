@@ -1,12 +1,6 @@
 {
   "menu": [
     {
-      "id": "4",
-      "nombre": "Pie de Limon",
-      "precio": 5,
-      "categoria": 2
-    },
-    {
       "id": "5",
       "nombre": "Pie de Parchita",
       "precio": 5,
@@ -107,6 +101,12 @@
       "nombre": "nuevo",
       "precio": "3",
       "categoria": "3"
+    },
+    {
+      "id": "2e60",
+      "nombre": "PEPE",
+      "precio": "5",
+      "categoria": "1"
     }
   ],
   "cliente": []
